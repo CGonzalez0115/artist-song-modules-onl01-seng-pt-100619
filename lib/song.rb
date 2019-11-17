@@ -18,6 +18,17 @@ class Song
     @@songs
   end
 
+<<<<<<< HEAD
+=======
+  #def self.reset_all
+    #self.all.clear
+  #end
+
+  #def self.count
+    #self.all.count
+  #end
+
+>>>>>>> fc7e532417bb82564677a817e3066180afa37d3b
   def artist=(artist)
     @artist = artist
   end
