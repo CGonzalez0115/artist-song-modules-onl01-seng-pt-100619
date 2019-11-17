@@ -4,6 +4,9 @@ class Artist
   attr_accessor :name
   attr_reader :songs
 
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
+
   @@artists = []
 
   def initialize
@@ -19,17 +22,6 @@ class Artist
     @@artists
   end
 
-<<<<<<< HEAD
-=======
-  #def self.reset_all
-  #  self.all.clear
-  #end
-
-  #def self.count
-    #self.all.count
-  #end
-
->>>>>>> fc7e532417bb82564677a817e3066180afa37d3b
   def add_song(song)
     @songs << song
     song.artist = self
